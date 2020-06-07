@@ -25,5 +25,9 @@ public class Main {
 
     }
 
+    private static void whileLoop(int x, int y){
+        System.out.println("While Loop");
+    }
+
 
 }
