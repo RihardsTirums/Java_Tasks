@@ -14,13 +14,16 @@ public class Main {
         int y = scanner.nextInt();
 
         forLoop(x, y);
+
     }
 
     private static void forLoop(int x, int y){
         System.out.println("For Loop");
-        for (int i = 0; i < ; i++) {
-
+        for (int i = 1; i <=x; i+=2) {
+            System.out.println(i);
         }
 
     }
+
+
 }
