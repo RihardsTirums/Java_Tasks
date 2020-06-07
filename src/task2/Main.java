@@ -1,8 +1,8 @@
-package task1;
+package task2;
 
 import java.util.Scanner;
 
-public class For {
+public class Main {
     public static void main(String[] args) {
 
         // Create Scanner for user input
@@ -11,13 +11,15 @@ public class For {
         int x = scanner.nextInt();
         System.out.print("Please enter starting number from witch to print out: ");
         int y = scanner.nextInt();
+        forLoop(x, y);
+    }
 
-        //Using for loop print out entered values by user ascending from x to y
-        for (int counter = 0; counter < x ; counter++) {
-            System.out.println("Printing values ascending " + y++);
+    private static void forLoop(int x, int y){
+        System.out.println("For Loop");
+        for (int i = 0; i < x ; i--) {
+            System.out.println(y++);
 
         }
-
     }
 
 
