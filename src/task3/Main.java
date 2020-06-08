@@ -14,6 +14,7 @@ public class Main {
         int y = scanner.nextInt();
 
         forLoop(x, y);
+        whileLoop(x, y);
 
     }
 
@@ -27,6 +28,12 @@ public class Main {
 
     private static void whileLoop(int x, int y){
         System.out.println("While Loop");
+        int i =1;
+        while (i <= x){
+            i+=2;
+            System.out.println(i);
+        }
+
     }
 
 
