@@ -15,6 +15,7 @@ public class Main {
 
         forLoop(x, y);
         whileLoop(x, y);
+        doWhileLoop(x, y);
 
     }
 
@@ -34,6 +35,15 @@ public class Main {
             System.out.println(i);
         }
 
+    }
+
+    private static void doWhileLoop(int x, int y){
+        System.out.println("Do-While Loop");
+        int i = 1;
+        do {
+            System.out.println(i);
+            i+=2;
+        }while (i <= x);
     }
 
 
