@@ -20,5 +20,22 @@ Write a method that finds two neighbouring numbers in an array with the smallest
  */
 
 
+import java.util.Arrays;
+
 public class task4 {
+    public static void main(String[] args) {
+            // Create an Array
+            int [] numbers = {1,2,4,5,6};
+            // Print out original Array
+            System.out.println("Original Array: " + Arrays.toString(numbers));
+            int elements [] = new int [numbers.length-1];
+
+            //Create For Loop
+            for (int i = 0; i <numbers.length ; i++) {
+
+        }
+        elements[elements.length-1] = 3;
+        System.out.println("New Array: " + Arrays.toString(elements));
+    }
 }
+
