@@ -25,6 +25,21 @@ import java.util.Arrays;
 
 public class task3 {
 
+    // addElementAtIndex method will add element at the specific index in array.
+    private static int[] addElementAtIndex(int original[],int element,int index){
+        int result [] = new int [original.length+1];
+        for (int i = 0; i < result.length ; i++) {
+            if (i < index) {
+                result[i] = original[i];
+            } else if (i == index) {
+                result[i] = element;
+            } else {
+                result[i] = original[i - 1];
+            }
+        }
+        return result;
+    }
+
     // addElement method will add element at the end of array.
     private static int[] addElement(int numbers[],int addingValue){
         int elements [] = new int [numbers.length+1];
@@ -37,14 +52,21 @@ public class task3 {
         return elements;
     }
 
+
+
     public static void main(String[] args) {
 
         int [] numbers = {1,2,3};
         System.out.println("Old Array: " + Arrays.toString(numbers));
 
+        // Add value to array and save it.
         int[] saveValue = addElement(numbers,4);
 
-        
+        // Add value to array by index
+        int[] byIndex = addElementAtIndex(numbers,15,2);
+        System.out.println(Arrays.toString(byIndex));
+
+
 
     }
 
