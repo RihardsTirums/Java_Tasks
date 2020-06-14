@@ -24,20 +24,30 @@ Write a method that finds two neighbouring numbers in an array with the smallest
 import java.util.Arrays;
 
 public class task3 {
+
+    // addElement method will add element at the end of array.
+    private static int[] addElement(int numbers[],int addingValue){
+        int elements [] = new int [numbers.length+1];
+
+        for (int i = 0; i < numbers.length ; i++) {
+            elements[i] = numbers[i];
+        }
+        elements[elements.length-1] = addingValue;
+        System.out.print("New Array: " + Arrays.toString(elements));
+        return elements;
+    }
+
     public static void main(String[] args) {
 
         int [] numbers = {1,2,3};
         System.out.println("Old Array: " + Arrays.toString(numbers));
-        int elements [] = new int [numbers.length+1];
 
-        for (int i = 0; i < numbers.length ; i++) {
-            //System.out.println(numbers[i]);
-            elements[i] = numbers[i];
-        }
-        elements[elements.length-1] = 67;
-        System.out.print("New Array: " + Arrays.toString(elements));
+        int[] saveValue = addElement(numbers,4);
 
+        
+
+    }
 
 
     }
-}
+

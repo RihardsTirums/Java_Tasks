@@ -23,19 +23,37 @@ Write a method that finds two neighbouring numbers in an array with the smallest
 import java.util.Arrays;
 
 public class task4 {
+    // Create method that will add new element at specific index
+    private static void addElement(int numbers[],int addingValue,int possition){
+
+    }
     public static void main(String[] args) {
+
             // Create an Array
             int [] numbers = {1,2,4,5,6};
+            // Create position where new element will be added and element to add
+            int possition = 2;
+            int addingValue = 3;
+
             // Print out original Array
             System.out.println("Original Array: " + Arrays.toString(numbers));
-            int elements [] = new int [numbers.length-1];
+            // Create Second Array
+            int elements [] = new int [numbers.length+1];
+
 
             //Create For Loop
             for (int i = 0; i <numbers.length ; i++) {
-
+            // Copy existing elements to new Array
+            elements[i] = numbers[i];
         }
-        elements[elements.length-1] = 3;
-        System.out.println("New Array: " + Arrays.toString(elements));
+            // Adding element "3" to an Array
+            elements[elements.length-1] = 3;
+            // Prints Out new Array with added element
+            System.out.println("New Array: " + Arrays.toString(elements));
+
+
+        addElement(numbers,addingValue,possition);
     }
+
 }
 
