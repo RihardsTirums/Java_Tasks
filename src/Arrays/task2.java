@@ -26,14 +26,25 @@ public class task2 {
     public static void main(String[] args) {
 
         int oldArray[] = {1,2,3,4,5,6,7,8};
-        int newArray[] = Arrays.copyOf(oldArray, oldArray.length);
+        // Created array with 8 elements
+        int copyArray[] = new int [oldArray.length];
 
-        //System.out.println("Old Array " + oldArray);
 
-        for (int i = 0; i <newArray.length ; i++) {
-            System.out.print(newArray[i]);
+        // Print out Original Array
+        System.out.print("Original Array: " + Arrays.toString(oldArray));
+        // Break
+        System.out.println("");
+
+        for (int i = 0; i <oldArray.length ; i++) {
+            // Save old array elemnts into copy array
+            copyArray[i] = oldArray[i];
 
         }
+        // Print out Copy Array
+        System.out.println("Copy of an Original Array: " + Arrays.toString(copyArray));
+
+
+
 
     }
 }
